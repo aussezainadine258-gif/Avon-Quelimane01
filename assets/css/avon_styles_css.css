@@ -1,0 +1,770 @@
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.hero-text {
+    color: white;
+}
+
+.headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #FFD700;
+    display: block;
+    font-size: 4rem;
+}
+
+.subheadline {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    line-height: 1.8;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #FF6B9D, #C06C84);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.6);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Emotional Connection */
+.emotional-connection {
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #fff 0%, #ffeef8 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #C06C84;
+    margin-bottom: 60px;
+    font-weight: 800;
+}
+
+.emotion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.emotion-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.emotion-card:hover {
+    transform: translateY(-10px);
+}
+
+.emoji {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.emotion-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.transformation-text {
+    background: linear-gradient(135deg, #FF6B9D, #C06C84);
+    color: white;
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);
+}
+
+.transformation-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.transformation-text p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.bold-text {
+    font-size: 2rem !important;
+    font-weight: 800;
+    margin-top: 30px !important;
+}
+
+/* Why Avon */
+.why-avon {
+    padding: 100px 20px;
+    background: white;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, #ffeef8, #fff);
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.2);
+}
+
+.benefit-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    color: #C06C84;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Products Section */
+.products {
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #fff, #f8f9ff);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);
+}
+
+.product-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(135deg, #ffeef8, #e8f4ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-name {
+    font-size: 1.6rem;
+    color: #C06C84;
+    padding: 25px 25px 15px;
+    font-weight: 700;
+}
+
+.product-description {
+    padding: 0 25px 20px;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.product-benefits {
+    list-style: none;
+    padding: 0 25px 25px;
+}
+
+.product-benefits li {
+    padding: 10px 0;
+    color: #555;
+    font-size: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-benefits li:last-child {
+    border-bottom: none;
+}
+
+.product-cta {
+    display: block;
+    margin: 0 25px 25px;
+    padding: 18px;
+    background: linear-gradient(135deg, #FF6B9D, #C06C84);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.product-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+}
+
+.cta-center {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.cta-button-large {
+    display: inline-block;
+    padding: 25px 60px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+}
+
+.cta-button-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.6);
+}
+
+/* Social Proof */
+.social-proof {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffeef8, #f8f9ff);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.testimonial-avatar {
+    font-size: 3rem;
+}
+
+.testimonial-header h4 {
+    color: #C06C84;
+    font-size: 1.3rem;
+}
+
+.location {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.testimonial-text {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-stars {
+    font-size: 1.3rem;
+}
+
+/* Final Emotional */
+.final-emotional {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.final-emotional .section-title {
+    color: white;
+}
+
+.mirror-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mirror-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.big-text {
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.answer-text {
+    font-size: 2.5rem;
+    margin: 40px 0;
+}
+
+.mirror-content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.highlight-box {
+    background: rgba(255, 215, 0, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 1.5rem !important;
+    border: 2px solid #FFD700;
+    margin-top: 40px !important;
+}
+
+/* Offer Section */
+.offer {
+    padding: 100px 20px;
+    background: white;
+}
+
+.offer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.offer-box {
+    background: linear-gradient(135deg, #ffeef8, #fff);
+    padding: 50px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.offer-box h3 {
+    color: #C06C84;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.offer-list {
+    list-style: none;
+}
+
+.offer-list li {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.offer-list li:last-child {
+    border-bottom: none;
+}
+
+.urgency-text {
+    text-align: center;
+}
+
+.urgency-text p {
+    font-size: 1.5rem;
+    color: #FF6B9D;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+/* WhatsApp CTA */
+.whatsapp-cta {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+}
+
+.whatsapp-cta .section-title {
+    color: white;
+}
+
+.whatsapp-subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    opacity: 0.95;
+}
+
+.whatsapp-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 60px;
+    background: white;
+    color: #25D366;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 60px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.whatsapp-icon {
+    font-size: 2rem;
+}
+
+.whatsapp-note {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 80px 20px 40px;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.footer-content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer-cta-text {
+    margin: 40px 0;
+    font-size: 1.4rem !important;
+}
+
+.footer-button {
+    display: inline-block;
+    padding: 25px 60px;
+    background: linear-gradient(135deg, #FF6B9D, #C06C84);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.4);
+    transition: all 0.3s ease;
+}
+
+.footer-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(255, 107, 157, 0.6);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    margin-top: 20px !important;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-float-icon {
+    font-size: 2.5rem;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .headline {
+        font-size: 2.8rem;
+    }
+    
+    .highlight {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.2rem;
+    }
+    
+    .highlight {
+        font-size: 2.5rem;
+    }
+    
+    .subheadline {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .products-grid,
+    .testimonials-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-button,
+    .whatsapp-button,
+    .cta-button-large {
+        font-size: 1.2rem;
+        padding: 18px 30px;
+    }
+    
+    .mirror-content,
+    .offer-box {
+        padding: 30px 20px;
+    }
+    
+    .big-text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.8rem;
+    }
+    
+    .highlight {
+        font-size: 2rem;
+    }
+    
+    .floating-whatsapp {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float-icon {
+        font-size: 2rem;
+    }
+}
